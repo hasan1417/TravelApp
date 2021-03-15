@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel App</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="trip-form-box">
+            <div class="trip-form">
+                <label>Flying From</label>
+                <input type="text" class="form-control" id="start" placeholder="Origin City">
+                <label>Flying To</label>
+                <input type="text" class="form-control" id="destination" placeholder=" Destination City">
+                <div class="trip-info">
+                    <label>Departing</label>
+                    <input type="date" class="form-control date-selection" id="departure" placeholder="Departure Date">
+                </div>
+                <div class="trip-info">
+                    <label>Arriving</label>
+                    <input type="date" class="form-control date-selection" id="arrival" placeholder="Arrival Date">
+                </div>
+                <div class="trip-info">
+                    <button type="submit" id="submit" name="submit">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id="fetchedData"></div>
+    </div>
+</body>
+<footer>
+    <p>Hassan Algizani</p>
+</footer>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+
+</html>

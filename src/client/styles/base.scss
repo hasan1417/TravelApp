@@ -1,0 +1,15 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../media/background.jpg);
+    background-size: cover;
+    background-position: center;
+   }
+   
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}

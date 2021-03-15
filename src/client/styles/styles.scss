@@ -1,0 +1,82 @@
+.flex-container{
+    display: flex;
+}
+
+.trip-form-box{
+    max-height: 400px;
+    max-width: 350px;
+    margin: 10% auto 0;
+    border: 1px solid #ced4da;
+}
+
+.trip-form{
+    padding: 0 15px 15px;
+}
+
+.trip-form label{
+    margin-bottom: 6px;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.trip-info{
+    width: 152px;
+    display: inline-block;
+}
+
+.form-control{
+    font-size: 12px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.date-selection::-webkit-inner-spin-button,
+.date-selection::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.date-selection::-webkit-calendar-picker-indicator{
+    background: transparent !important;
+}
+
+#submit{
+    width: 100%;
+    padding: 5px 0 !important;
+    font-size: 12px !important;
+    margin-top: 3px;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+#submit:hover{
+    
+    background: lightblue !important;
+    color: #000 !important;
+    transition: 0.4s;
+}
+
+#fetchedData{
+color: white;
+display: inline;
+}
+
+@media(max-width:1100px){
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #fetchedData{
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+    }
+
+}
